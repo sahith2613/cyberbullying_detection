@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Cyber Bullying Detection</title>
+</head>
+<body>
+    <img src="/static/images/girl.png" alt="backround" class="bg-img">
+    <div class="detection-container">
+        <h2>Cyber Bullying Detection</h2>
+        <form method="POST" action="{{ url_for('detect_cyberbullying') }}">
+            <textarea name="comment" placeholder="Enter text here..." required></textarea>
+            <button type="submit">Detect</button>
+        </form>
+        {% if prediction %}
+            <p>Result: {{ prediction }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
