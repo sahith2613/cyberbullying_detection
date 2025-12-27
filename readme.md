@@ -94,12 +94,12 @@ Machine Learning: TensorFlow/Keras, scikit-learn
 
 Text Processing: NLTK
 
-Deployment: Localhost or web server
+Deployment: Localhost 
 
 Future Enhancements:
 
-Improve authentication with a database.
-
-Add support for multiple languages.
-
-Deploy the application on a cloud platform.
+                  Improve authentication with a database.
+                  
+                  Add support for multiple languages.
+                  
+                  Deploy the application on a cloud platform.
